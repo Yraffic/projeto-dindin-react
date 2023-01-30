@@ -84,7 +84,41 @@ export default function Home() {
   useEffect(() => {
     transacoes()
   }, [])
+  useEffect(()=>{
+    setValorEntrada('')
+    setValorSaida('')
+    setValorTotal('')
+    const localArray = [...lista]
+    const valoresEntrada = []
+    let  valorEntrada;
+    for(let i of localArray){
+      let contador = 0
+      if(i.tipo === 'entrada'){
+        valoresEntrada.push(Number(i.valor))
+      }
+      for(let j of valoresEntrada){
+        contador += j
+      }
+      valorEntrada = contador
+    }
+    setValorEntrada(valorEntrada)
 
+    const valoresSaida = []
+    let  valorSaida;
+    for(let i of localArray){
+      let contador = 0
+      if(i.tipo === 'saida'){
+        valoresSaida.push(Number(i.valor))
+      }
+      for(let j of valoresSaida){
+        contador += j
+      }
+      valorSaida = contador
+    }
+    setValorSaida(valorSaida)
+    const total = valorEntrada + valorSaida
+    setValorTotal(total)
+  },[showModal, lista])
   return (
     <div className='conteiner-home'>
       <Navbar />
