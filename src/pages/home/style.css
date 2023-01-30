@@ -1,0 +1,124 @@
+.conteiner-home {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90.23deg, #05EDE3 0.02%, #645FFB 99.63%);
+}
+
+.registros {
+    display: flex;
+    padding: 110px 40px 40px;
+    border-radius: 60px 60px 0 0;
+    background-color: #fff;
+}
+
+.btn-filtro {
+    all: unset;
+    display: flex;
+    text-align: center;
+    padding: 8px 15px 8px 15px;
+    background: #FAFAFA;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+    margin-bottom: 26px;
+}
+
+.btn-filtro img {
+    margin-right: 8px;
+}
+
+.btn-filtro h1 {
+    font-size: 12px;
+}
+
+.conteiner-informacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho p {
+    margin-right: 100px;
+    font-weight: 500;
+}
+
+.adicionar-registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 34px;
+}
+
+.resumo {
+    width: 236px;
+    height: 196px;
+    border-radius: 10px;
+    padding: 26px 33px 32px 33px;
+    margin-bottom: 27px;
+    background-color: #FAFAFA;
+    color: #2F2F2F;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1)
+}
+
+.resumo h1 {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+
+.resumo p {
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 650;
+}
+
+.resumo-entrada,
+.resumo-saida,
+.saldo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumo-entrada,
+.resumo-saida {
+    margin-bottom: 12px;
+}
+
+.valor-entrada {
+    color: var(--color-roxo);
+}
+
+.valor-saida {
+    color: var(--color-laranja-fraco);
+}
+
+.entradas {
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.saldo {
+    cursor: pointer;
+    margin-top: 17px;
+}
+
+.valor-saldo {
+    color: var(--color-azul-calro);
+}
+
+.resumo h2 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.add-registro {
+    all: unset;
+    width: 236px;
+    height: 46px;
+    border-radius: 5px;
+    background-color: var(--color-roxo);
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
